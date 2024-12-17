@@ -1,3 +1,44 @@
 body {
+    background-color: rgb(4, 4, 26);
+    h1{
+        color: aliceblue;
+        font-family:Arial, Helvetica, sans-serif;
+        font-variant: small-caps;
+    }
+}
 
+
+body div links {
+    text-align: right;
+    word-spacing: 10%;
+    border-radius: 15px;
+}
+
+
+body p{
+    max-width: 600px;
+    color: aliceblue;
+    text-align: justify;
+}
+
+
+body .topnav {
+    background-color: rgba(22, 118, 201, 0.158);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 3%;
+    padding-left: 3%;
+    overflow: hidden;
+}
+body .topnav a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+
+body .topnav a.active {
+    background-color: rgb(39, 34, 112);
+    color: white;
+    border-radius: 15px;
 }
