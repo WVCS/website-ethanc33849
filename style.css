@@ -23,11 +23,36 @@ h1{
     padding: 14px 16px;
 }
 
-
 .topnav a.active {
     background-color: rgb(39, 34, 112);
     color: white;
     border-radius: 15px;
+}
+
+.topnavitem {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.topnavitem::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(22, 118, 201, 0.158);
+    border-radius: 4px;
+    bottom: 15%;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.topnavitem:hover::before {
+    transform: scale(1);
+    background-color: rgb(76, 74, 114);
 }
 
 /*About Me Page*/
