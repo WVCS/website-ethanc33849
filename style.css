@@ -31,7 +31,7 @@ h1{
 }
 
 /*About Me Page*/
-div.AboutMe{
+div.MyProgrammingExperience{
     max-width: 700px;
     margin: auto;
 }
@@ -39,45 +39,4 @@ div.AboutMe{
 body p{
     color: aliceblue;
     text-align: justify;
-}
-
-/*My Projects Page*/
-div.project {
-    width: 392px;
-    margin: auto;
-    visibility: hidden;
-    transform: translateY(50px);
-    transition: opacity 0.75s ease, transform 0.75s ease;
-}
-
-div.project.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    height: 650px;
-    width: 392px;
-}
-
-div.projects {
-    display: grid;
-    background-color: rgb(10, 10, 46);
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    row-gap: 40px;
-    max-width: 800px;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-}
-div.project:nth-child(1) {
-    grid-column: 1/-1;
-}
-
-div.project:nth-child(n+2) {
-    grid-column: span 1;
-}
-
-h4 {
-    color: aliceblue;
-    text-align: center;
 }

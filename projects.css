@@ -1,0 +1,75 @@
+/*Whole Page*/
+body {
+    background-color: rgb(4, 4, 26);
+}
+
+h1{
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+/*Top Navigation*/
+.topnav {
+    background-color: rgba(22, 118, 201, 0.158);
+    padding: 10px 3%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.topnav a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+
+.topnav a.active {
+    background-color: rgb(39, 34, 112);
+    color: white;
+    border-radius: 15px;
+}
+
+/*My Projects Page*/
+h2 {
+    color: aliceblue;
+    text-align: center;
+}
+
+h4 {
+    color: antiquewhite;
+    text-align: justify;
+}
+
+div.projects {
+    display: grid;
+    background-color: rgb(10, 10, 46);
+    row-gap: 200px;
+    max-width: 90%;
+    margin: auto;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+div.project {
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 85%;
+}
+
+div.projectShow {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+div.project#weather {
+    max-width: 1200px;
+}
