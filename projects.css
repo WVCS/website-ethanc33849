@@ -98,3 +98,11 @@ div.projectShow {
 div.project#weather {
     max-width: 1200px;
 }
+
+div.project#dataset {
+    max-width: 1000px;
+}
+
+div.project#digitaldesign {
+    max-width: 800px;
+}
